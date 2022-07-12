@@ -1,9 +1,13 @@
-const prompt = require('prompt');
-prompt.start();
+function maxnumber(arr){
+    let max = 0
+    for (let i = 0; i< arr.length; i++) {
+        if(arr[i] > max){
+            max = arr[i]
+        }
+    }
+    console.log(max);
+}
 
+let array = [1,2,3,4]
 
-prompt.get('input', function (err, result) {
-  
-    // Write code here
-  
-});
+maxnumber(array)
