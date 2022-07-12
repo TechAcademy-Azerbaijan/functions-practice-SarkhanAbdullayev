@@ -1,9 +1,7 @@
-const prompt = require('prompt');
-prompt.start();
-
-
-prompt.get('input', function (err, result) {
-  
-    // Write code here
-  
-});
+function squarelist(n){
+    for ( let i = 1 ; i**2 < n ; i++ ) {
+        console.log( i ** 2 );
+    }
+}
+let n = 20
+squarelist(n)
