@@ -1,14 +1,4 @@
-const prompt = require('prompt');
-prompt.start();
-
-
-prompt.get('input', function (err, result) {
-    /* 
-    Istifadəçinin daxil etdiyi dəyişəni qəbul edirik. 
-    Giriş veriləni String type olur. Riyazi əməliyyatları tətbiq etmək üçün parseInt() metodundan istifadə edərək Number type-a çevrilməlidir.
-    */
-    var num = parseInt(result.input); // 9
-    function prime(n){
+function prime(n){
     let res = "Yes"
     for (let i = 2; i < n; i++) {
         if(n % i == 0){
@@ -19,5 +9,6 @@ prompt.get('input', function (err, result) {
 
     console.log(res);
 }
-prime(num);
-});
+let num = 237
+
+prime(num)
