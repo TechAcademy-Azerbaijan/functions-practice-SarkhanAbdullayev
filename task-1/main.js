@@ -1,7 +1,7 @@
 function price(n){
     let first = parseInt( n / 100 )
     let second = parseInt( n % 100 / 20)
-    let third = n % 120
+    let third = n % 100 % 20
 
     console.log(first * 100 + second * 30 + third * 2);
 }
